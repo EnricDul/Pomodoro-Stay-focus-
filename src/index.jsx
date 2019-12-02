@@ -1,11 +1,6 @@
-import Timer from "../components/timer";
 import React from "react";
-import ReactDOM from "react-dom";
-import "../scss/app.scss";
+import ReactDom from "react-dom";
+import App from "./components/App.jsx";
 
 
-const timerArea = document.getElementById("timerArea");
-
-ReactDOM.render(
-  <Timer />, timerArea
-);
+ReactDom.render(<App />, document.querySelector("#app"));
